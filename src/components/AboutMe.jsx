@@ -78,12 +78,13 @@ const PicFrame = styled.div`
   /* background-color: #e90cc4; */
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 375px;
   margin: 10px;
   /* left: 400px; */
   border: 15px solid
     ${(props) => (props.isDarkMode ? props.theme.frame : props.theme.frame)};
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
   img {
     position: absolute;
     width: 300px;

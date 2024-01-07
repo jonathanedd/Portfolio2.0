@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
 
-import aboutme from "../images/aboutme.jpeg";
+import aboutme from "../images/Image.jpg";
 
 export default function AboutMe() {
   const { theme, isDarkMode } = useTheme();

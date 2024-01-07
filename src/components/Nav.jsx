@@ -18,7 +18,7 @@ export default function Nav() {
         <IoIosMenu onClick={toggleMenu} />
       </BurguerIcon>
 
-      <Menu >
+      <Menu showMenu={showMenu}>
         <Link
           activeClass="active"
           to="home"

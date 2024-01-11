@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import reactchat from "../images/reactchat.png";
+import marvelapi from "../images/marvelapi.jpg";
 
 export default function Projects() {
   // const { theme, isDarkMode } = useTheme();
@@ -21,19 +22,19 @@ export default function Projects() {
           <span>MongoDB Node Express React</span>
         </Card>
         <Card>
-          <img src="" alt="" />
+          <img src={marvelapi} alt="" />
           <h3>Tasks-Mobile-App</h3>
           <span>
             PostgreSQL Express <br /> React Native Node
           </span>
         </Card>
         <Card>
-          <img src="" alt="" />
+          <img src={reactchat} alt="" />
           <h3>Calculator</h3>
           <span>React Native Calculator</span>
         </Card>
         <Card>
-          <img src="" alt="" />
+          <img src={marvelapi} alt="" />
           <h3>Marvel API</h3>
           <span>Marvel API with React JS</span>
         </Card>
@@ -80,7 +81,6 @@ const TitleProjects = styled.div`
   h1 {
     border-bottom: 3px solid #750e21;
   }
-  
 `;
 
 const Card = styled.div`

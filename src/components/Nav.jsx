@@ -79,7 +79,6 @@ const BurguerIcon = styled.div`
     color: #750e21;
     padding: 15px;
     display: block;
-    position: relative;
   }
 `;
 
@@ -90,8 +89,8 @@ const Menu = styled.ul`
   list-style: none;
   align-items: center;
   margin: auto;
-  position: relative;
   cursor: pointer;
+
   a {
     text-decoration: none;
     display: flex;
@@ -102,28 +101,28 @@ const Menu = styled.ul`
   }
   @media all and (max-width: 480px) {
     display: ${(props) => (props.showMenu ? "block" : "none")};
-    background-color: #333;
+    background-color: ${(props) =>
+      props.isDarkMode ? props.theme.body : props.theme.body};
     width: 80%;
-    transition: 4s;
-    animation: ${(props) => (props.showMenu ? "slideDown" : "slideUp")} 0.5s
-      ease;
+    transition: 0.5s;
+    animation: ${(props) => (props.showMenu ? "slideDown" : "slideUp")} 0.5s;
   }
 
   @keyframes slideDown {
     from {
-      transform: translateY(-100%);
+      transform: translateX(-100%);
     }
     to {
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 
   @keyframes slideUp {
     from {
-      transform: translateY(0);
+      transform: translateX(0);
     }
     to {
-      transform: translateY(-100%);
+      transform: translateX(-100%);
     }
   }
 `;
@@ -140,4 +139,8 @@ const TopNumber = styled.h1`
     props.isDarkMode ? props.theme.number : props.theme.number};
   opacity: 50%;
   font-size: 2.5rem;
+  @media all and (max-width: 480px) {
+    position: absolute;
+    right: 0%;
+  }
 `;

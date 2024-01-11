@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import UpBack from "./components/UpBack";
+import Footer from "./components/Footer";
 
 function App() {
   const [isDarkMode, setIsLightMode] = useState(true);
@@ -24,6 +25,7 @@ function App() {
         <AboutMe isDarkMode={isDarkMode} />
         <Projects />
         <ContactMe />
+        <Footer />
         <Switch handleMode={handleMode} isDarkMode={isDarkMode} />
         <UpBack />
       </AppContainer>
@@ -43,10 +45,12 @@ const darkTheme = {
   navList: "#DBE4C6", // Cream
   projectDesc: "#DBE4C6", // Cream
   projectTitle: "#750E21", // Red
+  red: "#750E21", // Red
+  cream: "#DBE4C6", // Cream
 };
 
 const lightTheme = {
-  body: "#E3DFFD", // lightgrey
+  body: "#ffffff", // lightgrey
   frame: "#000", // black
   number: "#000", //black
   text: "#000", // black
@@ -57,6 +61,8 @@ const lightTheme = {
   navList: "#750E21", // Red
   projectDesc: "#750E21", // Red
   projectTitle: "#000", // Red
+  red: "#750E21", // Red
+  cream: "#DBE4C6", // Cream
 };
 
 const AppContainer = styled.div`

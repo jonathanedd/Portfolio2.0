@@ -17,7 +17,7 @@ export default function Home() {
       </IconContainer>
 
       <img src={homepic} alt="" />
-      <h1>Hi!,  I'm Jhonny</h1>
+      <h1>Hi!, I'm Jhonny</h1>
       <h3>Welcome to my Site!</h3>
     </HomeContainer>
   );

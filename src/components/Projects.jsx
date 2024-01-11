@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import sigamacbook from "../images/iconwhite.png";
 import reactchat from "../images/reactchat.png";
 import marvelapi from "../images/marvelapi.jpg";
 
@@ -17,9 +18,9 @@ export default function Projects() {
 
       <CardsContainer>
         <Card>
-          <img src={reactchat} alt="" />
-          <h3>Real-Time-Chat</h3>
-          <span>MongoDB Node Express React</span>
+          <img src={sigamacbook} alt="" />
+          <h3>SIGA</h3>
+          <span>For education</span>
         </Card>
         <Card>
           <img src={marvelapi} alt="" />
@@ -87,13 +88,16 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
+  border-radius: 0.5rem;
+  border: 1px solid #750e21;
+  padding: 15px;
+  margin: 15px;
+  background-color: ${(props) =>
+    props.isDarkMode ? props.theme.card : props.theme.card};
 
   img {
     width: 200px;
     height: 200px;
-    border: 1px solid #750e21;
-    margin-left: 10px;
-    object-fit: cover;
   }
   h3 {
     margin-left: 10px;

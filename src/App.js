@@ -35,6 +35,7 @@ function App() {
 
 const darkTheme = {
   body: "#191919", // darkgrey
+  card: "#0F0F0F",
   frame: "#750E21", // red
   number: "#750E21", //red
   text: "#DBE4C6", // little text Cream
@@ -51,6 +52,7 @@ const darkTheme = {
 
 const lightTheme = {
   body: "#ffffff", // lightgrey
+  card: "#191919",
   frame: "#000", // black
   number: "#000", //black
   text: "#000", // black
@@ -60,7 +62,7 @@ const lightTheme = {
   button: "#000", // black
   navList: "#750E21", // Red
   projectDesc: "#750E21", // Red
-  projectTitle: "#000", // Red
+  projectTitle: "#DBE4C6", // Red
   red: "#750E21", // Red
   cream: "#DBE4C6", // Cream
 };

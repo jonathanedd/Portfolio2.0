@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function ContactMe() {
   return (
     <ContactContainer id="contactme">
-      <TopNumber>04</TopNumber>
+      <TopNumber>05</TopNumber>
 
       <TitleContact>
         <h1>Contact Me</h1>

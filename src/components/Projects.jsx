@@ -4,6 +4,7 @@ import styled from "styled-components";
 import sigamacbook from "../images/iconwhite.png";
 import calculator from "../images/calculator.png";
 import marvelapi from "../images/marvelapi.png";
+import rickandmorty from "../images/rickandmorty.png";
 import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
@@ -22,9 +23,21 @@ export default function Projects() {
   const openMarvelGithub = () => {
     window.open("https://github.com/jonathanedd/Marvel.git");
   };
+
+  const openCalculator = () => {
+    window.open("https://github.com/jonathanedd/calculator.git");
+  };
+
+  const openRickandmorty = () => {
+    window.open("https://rickymorty-appi.netlify.app");
+  };
+
+  const openRickandmortyGit = () => {
+    window.open("https://github.com/jonathanedd/rick-n-morty.git");
+  };
   return (
     <ProjectsContainer id="projects">
-      <TopNumber>03</TopNumber>
+      <TopNumber>04</TopNumber>
 
       <TitleProjects>
         {" "}
@@ -48,11 +61,13 @@ export default function Projects() {
           <img src={calculator} alt="" />
           <h3>Calculator</h3>
           <span>Made with React Native</span>
+          <FaGithub onClick={openCalculator} />
         </Card>
         <Card>
-          <img src={marvelapi} alt="" />
-          <h3>Marvel API</h3>
-          <span>Marvel API with React JS</span>
+          <img onClick={openRickandmorty} src={rickandmorty} alt="" />
+          <h3>Rick and Morty</h3>
+          <span>Rick and Morty Api</span>
+          <FaGithub onClick={openRickandmortyGit} />
         </Card>
       </CardsContainer>
     </ProjectsContainer>

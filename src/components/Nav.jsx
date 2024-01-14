@@ -41,13 +41,23 @@ export default function Nav() {
         </Link>
         <Link
           activeClass="active"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={900}
+        >
+          <NavNumber>03.</NavNumber>Skills
+        </Link>
+        <Link
+          activeClass="active"
           to="projects"
           spy={true}
           smooth={true}
           offset={0}
           duration={900}
         >
-          <NavNumber>03.</NavNumber>Projects
+          <NavNumber>04.</NavNumber>Projects
         </Link>
         <Link
           activeClass="active"
@@ -57,7 +67,7 @@ export default function Nav() {
           offset={0}
           duration={900}
         >
-          <NavNumber>04.</NavNumber>Contact me
+          <NavNumber>05.</NavNumber>Contact me
         </Link>
       </Menu>
       <TopNumber>01</TopNumber>

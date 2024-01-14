@@ -9,11 +9,15 @@ export default function Home() {
   const openGitHub = () => {
     window.open("https://github.com/jonathanedd");
   };
+
+  const openLinkedin = () => {
+    window.open("https://www.linkedin.com/in/jonaedd/");
+  };
   return (
     <HomeContainer theme={theme} isDarkMode={isDarkMode} id="home">
       <IconContainer theme={theme} isDarkMode={isDarkMode}>
         <FaGithub onClick={openGitHub} />
-        <FaLinkedin />
+        <FaLinkedin onClick={openLinkedin} />
       </IconContainer>
 
       <img src={homepic} alt="" />

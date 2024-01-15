@@ -39,18 +39,6 @@ export default function ContactMe() {
             </Message>
           </label>
         </FormContainer>
-
-        {/* <Contact>
-          <span>
-            <p>Phone:</p> +57 3172899381
-          </span>
-          <span>
-            <p>Email:</p> jhoeduardonez@gmail.com
-          </span>
-          <span>
-            <p>Location:</p> Bogotá DC, Colombia
-          </span>
-        </Contact> */}
       </InfoContainer>
       <SubmitButton>
         <button>Submit</button>
@@ -120,19 +108,6 @@ const Message = styled.div`
     overflow: hidden;
   }
 `;
-
-// const Contact = styled.div`
-//   width: 420px;
-//   text-align: end;
-//   span {
-//     color: ${(props) =>
-//       props.isDarkMode ? props.theme.text : props.theme.text};
-//   }
-//   p {
-//     color: #750e21;
-//     font-weight: 700;
-//   }
-// `;
 
 const SubmitButton = styled.div`
   display: flex;

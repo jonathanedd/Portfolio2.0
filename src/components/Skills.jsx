@@ -100,7 +100,7 @@ const TitleSkills = styled.h1`
   display: flex;
   color: ${(props) =>
     props.isDarkMode ? props.theme.title : props.theme.title};
-  border-bottom: #750e21 1px solid;
+  border-bottom: #750e21 3px solid;
   width: max-content;
   margin: auto;
 `;

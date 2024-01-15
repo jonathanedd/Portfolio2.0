@@ -30,13 +30,13 @@ export default function AboutMe() {
 // STYLES
 const AboutMeContainer = styled.div`
   height: 100vh;
-  margin: auto;
-  align-items: center;
+  @media all and (max-width: 480px) {
+    text-align: center;
+  }
 `;
 
 const TopNumber = styled.h1`
   /* background-color: bisque; */
-  margin-bottom: 70px;
   text-align: end;
   font-size: 2.5rem;
   opacity: 50%;
@@ -56,18 +56,25 @@ const AboutMeText = styled.div`
       props.isDarkMode ? props.theme.title : props.theme.title};
     flex-direction: column;
     margin: 10px;
+    @media all and (max-width: 480px) {
+      height: max-content;
+      padding-bottom: 20px;
+      width: 90%;
+    }
     h1 {
       border-bottom: 3px solid #750e21;
       width: fit-content;
       color: ${(props) =>
         props.isDarkMode ? props.theme.title : props.theme.title};
+      @media all and (max-width: 480px) {
+        margin: auto;
+      }
     }
 
     strong {
       color: ${(props) => props.theme.subTitle};
     }
   }
-
   @media all and (max-width: 480px) {
     display: flex;
     flex-direction: column;

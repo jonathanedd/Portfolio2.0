@@ -104,9 +104,6 @@ const CardsContainer = styled.div`
 
 const TitleProjects = styled.div`
   display: flex;
-
-  /* width: 820px; */
-  /* align-items: center; */
   color: ${(props) =>
     props.isDarkMode ? props.theme.title : props.theme.icon};
   h1 {

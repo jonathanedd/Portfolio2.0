@@ -100,10 +100,13 @@ const SkillContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media all and (max-width: 480px){
+  @media all and (max-width: 480px) {
     flex-direction: column;
     height: max-content;
   }
 `;
 
-const Graphical = styled.div``;
+const Graphical = styled.div`
+  background-color: ${(props) =>
+    props.isDarkMode ? props.theme.card : props.theme.card};
+`;

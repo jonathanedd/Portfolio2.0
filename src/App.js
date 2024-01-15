@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import UpBack from "./components/UpBack";
 import Footer from "./components/Footer";
+import Skills from "./components/Skills";
 
 function App() {
   const [isDarkMode, setIsLightMode] = useState(true);
@@ -23,6 +24,7 @@ function App() {
         <Nav isLightMode={isDarkMode} />
         <Home isDarkMode={isDarkMode} />
         <AboutMe isDarkMode={isDarkMode} />
+        <Skills />
         <Projects />
         <ContactMe />
         <Footer />

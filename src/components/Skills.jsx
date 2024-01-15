@@ -74,6 +74,7 @@ const SkillsCircular = () => {
 
   return (
     <>
+      <TopNumber id="skills">03</TopNumber>
       <TitleSkills>Skills</TitleSkills>
       <SkillContainer>
         {skills.map((skill, index) => (
@@ -86,18 +87,28 @@ const SkillsCircular = () => {
 
 export default SkillsCircular;
 
+const TopNumber = styled.h1`
+  width: 100%;
+  text-align: end;
+  font-size: 2.5rem;
+  opacity: 50%;
+  color: ${(props) =>
+    props.isDarkMode ? props.theme.number : props.theme.number};
+`;
+
 const TitleSkills = styled.h1`
+  display: flex;
   color: ${(props) =>
     props.isDarkMode ? props.theme.title : props.theme.title};
-  display: flex;
-  margin: auto;
   border-bottom: #750e21 1px solid;
   width: max-content;
+  margin: auto;
 `;
 
 const SkillContainer = styled.div`
   height: 100vh;
   display: flex;
+
   justify-content: center;
   align-items: center;
   @media all and (max-width: 480px) {

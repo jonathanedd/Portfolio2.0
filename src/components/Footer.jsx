@@ -20,7 +20,8 @@ const FooterContainer = styled.div`
   height: max-content;
   display: flex;
   flex-direction: column;
-  background-color: #0f0f0f;
+  background-color: ${(props) =>
+    props.isDarkMode ? props.theme.card : props.theme.card};
 
   span {
     color: ${(props) => props.theme.cream};

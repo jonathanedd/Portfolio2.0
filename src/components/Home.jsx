@@ -1,7 +1,7 @@
 import React from "react";
-import homepic from "../images/homepic.JPEG";
 import styled, { useTheme } from "styled-components";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import homepic from "../images/homepic.jpg";
 
 export default function Home() {
   const { theme, isDarkMode } = useTheme();
@@ -22,7 +22,7 @@ export default function Home() {
 
       <img src={homepic} alt="" />
       <h1>Hi!, I'm Jhonny</h1>
-      <h3>Thanks for visiting</h3>
+      <h3>Welcome to mySite!</h3>
     </HomeContainer>
   );
 }
@@ -40,6 +40,7 @@ const HomeContainer = styled.div`
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+
     box-shadow: 0 0 10px 5px rgba(10, 9, 9, 0.986);
   }
   h1 {

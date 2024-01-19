@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
 
-import aboutme from "../images/Image.jpg";
+import profileimg from "../images/profileimg.jpg";
 
 export default function AboutMe() {
   const { theme, isDarkMode } = useTheme();
@@ -20,7 +20,7 @@ export default function AboutMe() {
         </span>
 
         <PicFrame>
-          <img width="300px" src={aboutme} alt="" />
+          <img width="300px" src={profileimg} alt="" />
         </PicFrame>
       </AboutMeText>
     </AboutMeContainer>
@@ -90,7 +90,9 @@ const PicFrame = styled.div`
   /* left: 400px; */
   border: 15px solid
     ${(props) => (props.isDarkMode ? props.theme.frame : props.theme.frame)};
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.945), 0 8px 16px rgba(0, 0, 0, 0.973),
+    0 16px 32px rgba(0, 0, 0, 0.575);
+  border-radius: 0.3rem;
 
   img {
     position: absolute;
@@ -99,6 +101,7 @@ const PicFrame = styled.div`
     z-index: 1;
     top: 40px;
     right: -50px;
+    border-radius: 0.3rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.945), 0 8px 16px rgba(0, 0, 0, 0.973),
       0 16px 32px rgba(0, 0, 0, 0.575);
     @media all and (max-width: 480px) {

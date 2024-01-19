@@ -12,11 +12,12 @@ export default function AboutMe() {
       <AboutMeText>
         <span>
           <h1>What I do</h1>
-          Software Engineer and <strong>full-stack developer, </strong>
+          <strong>full-stack developer, </strong>
           specializing <br /> in
-          <strong> Reac JS</strong> and <strong> Node JS.</strong> I can
-          navigate databases Such <br /> SQL and NoSQL. I love reading and
-          swimming too.
+          <strong> Reac JS</strong> for frontend and <strong> Node JS</strong>{" "}
+          for backend. <br />I can navigate <strong>SQL</strong> and{" "}
+          <strong>NoSQL</strong> databases.
+          <br />I love reading and swimming too.
         </span>
 
         <PicFrame>

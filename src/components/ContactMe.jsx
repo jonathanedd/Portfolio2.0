@@ -13,10 +13,20 @@ export default function ContactMe() {
       <InfoContainer>
         <FormContainer action="">
           <label htmlFor="">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="in maintenance"
+            />
           </label>
           <label htmlFor="">
-            <input type="text" name="email" id="email" placeholder="Email" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="in maintenance"
+            />
           </label>
 
           <label htmlFor="">
@@ -24,7 +34,8 @@ export default function ContactMe() {
               type="text"
               name="subject"
               id="subject"
-              placeholder="Subject"
+              // placeholder="Subject"
+              placeholder="in maintenance"
             />
           </label>
 
@@ -34,7 +45,8 @@ export default function ContactMe() {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="Message"
+                // placeholder="Message"
+                placeholder="in maintenance"
               />
             </Message>
           </label>

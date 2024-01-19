@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
 
-import profileimg from "../images/profileimg.jpg";
+import profilepic from "../images/profilepic.JPG";
 
 export default function AboutMe() {
   const { theme, isDarkMode } = useTheme();
@@ -11,7 +11,7 @@ export default function AboutMe() {
 
       <AboutMeText>
         <span>
-          <h1>Who I am</h1>
+          <h1>What I do</h1>
           Software Engineer and <strong>full-stack developer, </strong>
           specializing <br /> in
           <strong> Reac JS</strong> and <strong> Node JS.</strong> I can
@@ -20,7 +20,7 @@ export default function AboutMe() {
         </span>
 
         <PicFrame>
-          <img width="300px" src={profileimg} alt="" />
+          <img width="300px" src={profilepic} alt="" />
         </PicFrame>
       </AboutMeText>
     </AboutMeContainer>
